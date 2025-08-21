@@ -1,3 +1,27 @@
+## Ejecución rápida del proyecto
+
+1. **Requisitos previos**:
+	- Flutter instalado ([guía oficial](https://docs.flutter.dev/get-started/install))
+	- Cuenta de Firebase y Cloudinary (configurar credenciales en el código)
+2. **Instalar dependencias**:
+	- Ejecuta en terminal:
+	  ```
+	  flutter pub get
+	  ```
+3. **Configurar Firebase**:
+	- Descarga `google-services.json` de tu proyecto Firebase y colócalo en `android/app/`.
+	- Asegúrate de tener configurado Firestore y Auth en Firebase Console.
+4. **Configurar Cloudinary**:
+	- Crea un upload preset unsigned y copia el nombre y cloud name en el código (`main.dart`).
+5. **Ejecutar la app**:
+	- Conecta un dispositivo o emulador Android y ejecuta:
+	  ```
+	  flutter run
+	  ```
+6. **Permisos**:
+	- Acepta los permisos de almacenamiento/galería en el dispositivo para subir imágenes.
+
+---
 samples, guidance on mobile development, and a full API reference.
 
 # gestion_pedidos_flutter
