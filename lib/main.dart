@@ -167,8 +167,107 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Gestión de Pedidos',
         theme: ThemeData(
-          primarySwatch: Colors.teal,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
+          brightness: Brightness.dark,
+          colorScheme: const ColorScheme(
+            brightness: Brightness.dark,
+            primary: Color(0xFF00FFF7),
+            onPrimary: Colors.black,
+            secondary: Color(0xFF8F00FF),
+            onSecondary: Colors.white,
+            error: Colors.red,
+            onError: Colors.white,
+            background: Color(0xFF181A20),
+            onBackground: Colors.white,
+            surface: Color(0xFF23272F),
+            onSurface: Colors.white,
+          ),
+          scaffoldBackgroundColor: const Color(0xFF181A20),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xFF23272F),
+            foregroundColor: Color(0xFF00FFF7),
+            elevation: 4,
+            titleTextStyle: TextStyle(
+              color: Color(0xFF00FFF7),
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Orbitron',
+              letterSpacing: 1.2,
+            ),
+            iconTheme: IconThemeData(color: Color(0xFF00FFF7)),
+          ),
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+            backgroundColor: Color(0xFF8F00FF),
+            foregroundColor: Colors.white,
+            elevation: 6,
+          ),
+          cardTheme: CardTheme(
+            color: const Color(0xFF23272F),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              side: const BorderSide(color: Color(0xFF00FFF7), width: 1),
+            ),
+            elevation: 4,
+            margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+          ),
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: const Color(0xFF23272F),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: const BorderSide(color: Color(0xFF00FFF7)),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: const BorderSide(color: Color(0xFF8F00FF), width: 2),
+            ),
+            labelStyle: const TextStyle(color: Color(0xFF00FFF7)),
+          ),
+          textTheme: const TextTheme(
+            bodyLarge: TextStyle(
+              color: Colors.white,
+              fontFamily: 'Orbitron',
+              fontSize: 16,
+            ),
+            bodyMedium: TextStyle(
+              color: Colors.white70,
+              fontFamily: 'Orbitron',
+              fontSize: 14,
+            ),
+            titleLarge: TextStyle(
+              color: Color(0xFF00FFF7),
+              fontFamily: 'Orbitron',
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF00FFF7),
+              foregroundColor: Colors.black,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              textStyle: const TextStyle(
+                fontFamily: 'Orbitron',
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+              elevation: 4,
+            ),
+          ),
+          snackBarTheme: const SnackBarThemeData(
+            backgroundColor: Color(0xFF8F00FF),
+            contentTextStyle:
+                TextStyle(color: Colors.white, fontFamily: 'Orbitron'),
+            behavior: SnackBarBehavior.floating,
+          ),
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+            backgroundColor: Color(0xFF23272F),
+            selectedItemColor: Color(0xFF00FFF7),
+            unselectedItemColor: Colors.white54,
+            showUnselectedLabels: true,
+            type: BottomNavigationBarType.fixed,
+          ),
         ),
         home: const MainScreen(),
       ),
