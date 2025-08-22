@@ -55,3 +55,7 @@ Aplicación Flutter para gestión de pedidos, productos y usuarios con autentica
 
 ---
 Este proyecto es una base para apps de e-commerce o gestión de inventario con autenticación y panel administrativo.
+
+##PRIMERA VERSION 
+
+Ejecutable https://www.mediafire.com/file/e147dhc38qal33i/app-release.apk/file o mi github Releases
